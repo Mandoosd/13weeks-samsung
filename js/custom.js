@@ -1,3 +1,5 @@
+
+
 $(function () {
 
     var swiper = new Swiper(".mySwiper", {
@@ -20,8 +22,8 @@ $(function () {
             disableOnInteraction: false,
         },
     });
-
-
-    Aos.init();
+    $(document).ready(function () {
+        AOS.init();
+    });
 
 });
