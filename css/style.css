@@ -2,7 +2,7 @@
 
 .main {
     height: 300vh;
-    background: #000;
+    /* background: #000; */
 }
 
 .header .header_top {
@@ -40,7 +40,7 @@
     max-width: 1600px;
     margin: 0 auto;
     padding: 60px 15px 28px 15px;
-    z-index: 999;
+    z-index: 1001;
     display: flex;
     justify-content: space-between;
     background: transparent;
@@ -114,9 +114,7 @@
     position: relative;
 }
 
-.main_visual .main_visual_wrap .swiper-wrapper {
-    filter: opacity(0.8);
-}
+
 
 .main_visual .main_visual_wrap .slide_txt {
     position: absolute;
@@ -124,7 +122,7 @@
     left: 50%;
 
     transform: translate(-50%, -50%);
-z-index: 999;
+    z-index: 999;
     text-align: center;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
@@ -154,7 +152,7 @@ z-index: 999;
 
 .card .card_wrap>* {
     flex: 1;
-z-index: 1000;
+    z-index: 1000;
 
 }
 
@@ -175,4 +173,202 @@ z-index: 1000;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+}
+
+.strategy {}
+
+.strategy .strategy_wrap h2 {
+    text-align: center;
+}
+
+.strategy .strategy_wrap .swiper-slide {
+    position: relative;
+    overflow: visible;
+
+}
+
+.strategy .strategy_wrap .swiper-slide figure {
+    overflow: hidden;
+    border-radius: 20px;
+    width: 281px;
+
+}
+
+.strategy .strategy_wrap .swiper-slide img {
+    filter: opacity(0.9);
+
+    transition: 0.5s;
+}
+
+.strategy .strategy_wrap .swiper-slide:hover img {
+    transform: scale(105%);
+
+}
+
+.strategy .strategy_wrap .swiper-slide .text {
+    position: absolute;
+    bottom: -50px;
+    left: 40px;
+
+    transition: 0.3s;
+}
+
+.strategy .strategy_wrap .swiper-slide:hover .text {
+    bottom: 20px;
+    left: 40px;
+}
+
+.strategy .strategy_wrap .swiper-slide .text>* {
+    display: block;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.strategy .strategy_wrap .swiper-slide .text strong {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin: 0 0 20px 0;
+}
+
+.strategy .strategy_wrap .swiper-slide .text .lnk {
+    display: inline-block;
+    padding: 12px 16px;
+    color: #1428A0;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.strategy .strategy_wrap .swiper-slide .text .lnk em {
+    font-weight: 600;
+}
+
+.strategy .strategy_wrap .swiper-slide .text .lnk span {
+    font-size: 16px;
+}
+
+.library {}
+
+.library .library_wrap {}
+
+.library .library_wrap h2 {
+    text-align: center;
+}
+
+
+.library .library_wrap .swiper-slide .txt_box {
+    position: relative;
+    width: 380px;
+    height: 320px;
+    padding: 45px 45px;
+
+    background: #f1f1f1;
+    border-radius: 40px;
+}
+
+.library .library_wrap .swiper-slide .txt_box>* {
+    display: block;
+}
+
+
+.library .library_wrap .swiper-slide .txt_box em {
+    margin: 0 0 32px 0;
+    color: #1428A0;
+
+    font-weight: 600;
+}
+
+.library .library_wrap .swiper-slide .txt_box strong {
+    font-size: 20px;
+    font-weight: 700;
+
+    margin: 0 0 20px 0;
+}
+
+.library .library_wrap .swiper-slide .txt_box span {
+    position: absolute;
+    bottom: 30px;
+    right: 45px;
+    padding: 8px 24px;
+    border: 1px solid #000;
+    border-radius: 16px;
+}
+
+.social .grid_wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+
+    gap: 30px;
+}
+
+.social .grid_wrap .itm {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+.social .grid_wrap .itm img {
+    transition: 0.2s;
+
+}
+
+.social .grid_wrap .itm:hover img {
+    filter: brightness(35%);
+}
+
+
+.social .grid_wrap .icon {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+}
+
+.social .grid_wrap .icon i {
+    font-size: 24px;
+    color: #fff;
+
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.social .grid_wrap .txt {
+    position: absolute;
+    bottom: -100px;
+
+    padding: 16px;
+    transition: 0.2s;
+    color: #fff;
+}
+
+.social .grid_wrap .itm:hover .txt {
+    bottom: 20px;
+}
+
+.social .grid_wrap .txt span {
+    margin: 0 0 8px 0;
+}
+
+.social .grid_wrap .txt p {
+    line-height: 18px;
+}
+
+.customer {}
+
+.customer .customer_wrap {
+    display: flex;
+    gap: 30px;
+}
+
+.customer .customer_wrap>* {
+    flex: 1;
+    max-width: 570px;
+    padding: 45px;
+    background: #666;
+    border-radius: 20px;
+
 }
