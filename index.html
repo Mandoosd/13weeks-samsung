@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </section>
-            <section class="strategy">
+            <section class="strategy default">
                 <div class="strategy_wrap inner">
                     <h2>지속가능경영활동</h2>
                     <div class="swiper sub_swiper">
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </section>
-            <section class="library">
+            <section class="library default">
                 <div class="library_wrap inner">
                     <h2>지식, 기술 라이브러리</h2>
                     <div class="swiper txt_swiper">
@@ -287,13 +287,15 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <h3>라이브러리 바로가기</h3>
+                </div>
+                <h3>라이브러리 바로가기</h3>
+                <div class="lnk">
                     <a href=""><span>설계안전성(DfS)</span></a>
                     <a href=""><span>기술</span></a>
                     <a href=""><span>QHSE</span></a>
                 </div>
             </section>
-            <section class="social">
+            <section class="social default">
                 <h2>소셜미디어 소식</h2>
                 <div class="grid_wrap inner">
                     <div class="itm itm01">
@@ -447,9 +449,12 @@
                     </div>
                 </div>
                 <h3>공식채널 바로가기</h3>
-                <a href=""><span>유튜브</span></a>
-                <a href=""><span>인스타그램</span></a>
-                <a href=""><span>페이스북</span></a>
+                <div class="lnk">
+
+                    <a href=""><span>유튜브</span></a>
+                    <a href=""><span>인스타그램</span></a>
+                    <a href=""><span>페이스북</span></a>
+                </div>
             </section>
             <section class="customer">
                 <div class="customer_wrap inner">
@@ -464,7 +469,7 @@
                     <div class="right">
                         <h3>협력회사 등록 안내</h3>
                         <p>삼성물산 건설부문과 함께 성장해나갈 외주, 자재, 용역서비스 협력사를 상시 모집 하고 있습니다</p>
-                        <a href=""><strong>Partner’s Portal<span class="material-symbols-outlined">
+                        <a href=""><strong>Partner’s Portal <span class="material-symbols-outlined">
                                     ios_share
                                 </span></strong></a>
                     </div>
@@ -472,7 +477,37 @@
             </section>
         </main>
         <footer class="footer">
-
+<div class="footer_top">
+    <div class="footer_wrap inner">
+        <div class="top_left">
+            <ul>
+                <li>이메일 무단수집거부</li>
+                <li>개인정보 처리방침</li>
+                <li>개인정보 수집 및 처리 목적</li>
+                <li>윤리경영</li>
+                <li>영상정보처리기기 운영ㆍ관리 방침</li>
+            </ul>
+        </div>
+        <div class="top_right">
+            <div class="lnk">
+                <select name="lnk" id="lnk">
+                    <option value="">패밀리 사이트</option>
+                    <option value="http://naver.com">그런건</option>
+                    <option value="http://naver.com">없서용</option>
+                </select>
+                <script>
+                    $(function () {
+                        $('#lnk').on('change', function () {
+                            //console.log($(this).val());
+                            let lnk = $(this).val();
+                            lnk && window.open(lnk);
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
         </footer>
     </div>
 </body>
